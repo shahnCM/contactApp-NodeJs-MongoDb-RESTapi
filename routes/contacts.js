@@ -43,7 +43,7 @@ router.post(
 // @access  Private
 router.put(
     '/:id', [AuthMiddleware.passIfAuthenticated],
-    (req, res) => await ContactController.update(req, res)
+    (req, res) => ContactController.update(req, res)
 )
 
 // @route   DELETE api/contacts/:id
@@ -51,7 +51,7 @@ router.put(
 // @access  Private
 router.delete(
     '/:id', [AuthMiddleware.passIfAuthenticated],
-    (req, res) => await ContactController.delete(req, res)
+    (req, res) => ContactController.delete(req, res)
 )
 
 module.exports = router;
