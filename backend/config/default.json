@@ -1,5 +1,6 @@
 {
     "jwtSecret": "secret",
-    "mongoURI": "mongodb://root:root@mongodb:27017/test?authSource=admin",
+    "mongoURI4docker": "mongodb://root:root@mongodb:27017/test?authSource=admin",
+    "mongoURI4local": "mongodb://localhost/test?authSource=admin",
     "mongoURI_remote": "NotGonnaTell"
 }

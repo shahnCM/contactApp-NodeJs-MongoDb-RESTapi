@@ -9,7 +9,7 @@ const AuthMiddleware = require('../middlewares/AuthMiddleware')
 // @access  Private
 router.get(
     '/:id?', AuthMiddleware.passIfAuthenticated,
-    (req, res) => await ContactController.read(req, res)
+    async (req, res) => await ContactController.read(req, res)
 )
 
 // @route   POST api/contacts
